@@ -1,0 +1,61 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML (HTML5 in this case) -->
+<html lang="en"> <!-- Opens the HTML document and specifies that the language is English -->
+
+<head>
+  <meta charset="UTF-8"> <!-- Defines the character encoding as UTF-8, which supports special characters and symbols -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the webpage responsive by setting the viewport width to the device width -->
+  <title>Ferrari Cars</title> <!-- Sets the title of the webpage, displayed on the browser tab -->
+
+  <style>
+    /* CSS styles for the page */
+
+    img {
+      width: 300px; /* Sets the width of all images to 300 pixels */
+      height: auto; /* Automatically adjusts height to maintain aspect ratio */
+      filter: grayscale(50%) contrast(120%); /* Applies a filter that makes the image 50% grayscale and increases contrast by 120% */
+      margin-bottom: 10px; /* Adds a 10-pixel space below each image */
+    }
+
+    .image-container {
+      text-align: center; /* Centers the content inside each image container */
+      margin-bottom: 20px; /* Adds a 20-pixel space below each image container */
+    }
+
+    .license-info {
+      font-size: 14px; /* Sets the text size of license information to 14 pixels */
+      color: #555; /* Sets the text color to a dark gray */
+    }
+  </style>
+</head>
+
+<body> <!-- Begins the body section, which contains the visible content of the page -->
+
+  <h1> The Ferrari Gallery</h1> <!-- Displays a heading for the webpage -->
+
+  <div class="image-container"> <!-- A container for the first image and its description -->
+    <img src="/Users/lavignejoicee/Downloads/ferrari.webp" 
+         alt="A Ferrari F40 with Red Color" 
+         title="Ferrari F40" 
+         width="300" height="200"> <!-- Displays an image with a specified source, alternative text, tooltip title, and fixed dimensions -->
+    <p class="license-info">I © Scuderia Car Parts Ltd 2025. </p> <!-- Displays a copyright notice below the image -->
+  </div>
+
+  <div class="image-container"> <!-- A container for the second image and its description -->
+    <img src="/Users/lavignejoicee/Downloads/FERRARILA.webp" 
+         alt="LaFerrari with most extreme performance in Red Color" 
+         title="La Ferrari" 
+         width="300" height="200"> <!-- Displays another image with a different source -->
+    <p class="license-info">Image licensed © Scuderia Car Parts Ltd 2025.</p> <!-- Copyright notice for the second image -->
+  </div>
+
+  <div class="image-container"> <!-- A container for the third image and its description -->
+    <img src="/Users/lavignejoicee/Downloads/540ferrari.webp" 
+         alt="A Ferrari 458 Speciale one of the best supercars" 
+         title="Speciale 458 Ferrari" 
+         width="300" height="200"> <!-- Displays the third image -->
+    <p class="license-info">Image licensed © Scuderia Car Parts Ltd 2025.</p> <!-- Copyright notice for the third image -->
+  </div>
+
+</body> <!-- Closes the body section -->
+
+</html> <!-- Closes the HTML document -->
