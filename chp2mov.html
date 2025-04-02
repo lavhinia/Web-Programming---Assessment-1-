@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- 
+  HTML5 document declaration - tells browsers this is a modern HTML document 
+  Using HTML5 because it's the current standard with best browser support
+-->
+<html lang="en">
+<head>
+   <!-- 
+      Document metadata section - contains info not displayed on page 
+      but needed for proper functionality
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangled | Disney's Rapunzel Story</title>
+  <!--
+      Page title appears in:
+      - Browser tabs
+      - Search engine results
+      - Bookmarks
+      The pipe character (|) separates page name from site name
+    -->
+    <link rel="stylesheet" href="chp2style.css">
+    <!--
+      Links external CSS file for styling
+      Using external CSS because:
+      - Separates content from presentation
+      - Easier maintenance
+      - Better performance (caching)
+    -->
+</head>
+<body>
+  <!-- 
+      Navigation section - helps users jump to content sections
+      Placed at top for immediate access
+    -->
+    <nav class="navbar">
+    <!--
+          <nav> semantic tag - indicates navigation content
+          class="navbar" connects to CSS styling
+          Using semantic HTML5 tags for better accessibility
+        -->
+        <ul>
+     <!--
+        Unordered list - standard structure for navigation links
+        More semantic than just divs with links
+            -->
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#plot">Plot</a></li>
+            <li><a href="#cast">Cast</a></li>
+            <li><a href="#characters">Characters</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+         <!--
+              Anchor links with fragment identifiers (#section)
+              - href="#overview" jumps to element with id="overview"
+              - Smooth scrolling handled by browser
+            -->
+            <!-- Repeated for other navigation items -->
+        </ul>
+    </nav>
+
+    <header>
+        <!--
+          <header> semantic tag - introductory content
+          Contains the main heading and tagline
+        -->
+        <h1>Tangled</h1>
+        <p class="tagline">The magical tale of the girl with 70 feet of golden hair</p>
+        <!--
+          Supporting tagline - class for specific styling
+          Descriptive text that complements the title
+        -->
+    </header>
+
+    <section id="overview">
+        <!--
+          <section> semantic tag - groups related content
+          id="overview" is the target for navigation
+        -->
+        <h2>Overview</h2>
+        <!--
+          Section heading - h2 indicates sub-section
+          Proper heading hierarchy (h1 > h2 > h3) is important for
+          Accessibility (screen readers)
+          SEO (search engine understanding)
+        -->
+        <p>Tangled is a 2010 American 3D computer-animated musical fantasy film produced by Walt Disney Animation Studios. Loosely based on the German fairy tale "Rapunzel" in the collection of folk tales published by the Brothers Grimm, it is the 50th Disney animated feature film.</p>
+         <!--
+          Paragraph tag for main content text
+          Default styling is readable font size with spacing
+        -->
+        <div class="key-info">
+        <!--
+        div as generic container - class for styling
+        Used here to group the key information box separately
+            -->
+            <h3>Key Information</h3>
+            <ul> <!-- Unordered list for key facts - easy to scan -->
+                <li><strong>Directed by:</strong> Nathan Greno and Byron Howard</li>
+                <li><strong>Release date:</strong> November 24, 2010</li>
+                <li><strong>Running time:</strong> 100 minutes</li>
+                <li><strong>Genre:</strong> Animation, Adventure, Comedy</li>
+                <li><strong>Music by:</strong> Alan Menken</li>
+            </ul>
+        </div>
+    </section>
+    <!-- Additional sections follow same pattern -->
+    <!-- Plot section -->
+    <!-- Cast section -->
+    <!-- Characters section -->
+
+    <section id="plot">
+        <h2>Plot Summary</h2>
+        <p>The film tells the story of Rapunzel, a lost young princess with magical long blonde hair who yearns to leave her secluded tower. She accepts the aid of a handsome intruder, Flynn Rider, to take her out into the world which she has never seen. Together, they embark on an exciting journey filled with adventure, romance, and self-discovery, while being pursued by Rapunzel's manipulative "mother" Gothel who wants to keep Rapunzel's power for herself.</p>
+    </section>
+
+    <section id="cast">
+        <h2>Voice Cast</h2>
+        <ul>
+            <li>Mandy Moore as Rapunzel</li>
+            <li>Zachary Levi as Flynn Rider/Eugene Fitzherbert</li>
+            <li>Donna Murphy as Mother Gothel</li>
+            <li>Ron Perlman as the Stabbington Brothers</li>
+            <li>Jeffrey Tambor as Big Nose Thug</li>
+            <li>Brad Garrett as Hook Hand Thug</li>
+        </ul>
+    </section>
+
+    <section id="characters">
+        <h2>Main Characters</h2>
+        <ul>
+            <li><strong>Rapunzel:</strong> A spirited and determined young woman with 70 feet of magical, golden hair</li>
+            <li><strong>Flynn Rider:</strong> A charming bandit who becomes Rapunzel's unlikely companion</li>
+            <li><strong>Mother Gothel:</strong> Rapunzel's manipulative "mother" who uses the magic in Rapunzel's hair to stay young</li>
+            <li><strong>Pascal:</strong> Rapunzel's loyal chameleon companion</li>
+            <li><strong>Maximus:</strong> A determined palace horse who relentlessly pursues Flynn</li>
+        </ul>
+    </section>
+
+    <section id="reviews">
+        <h2>Reviews</h2>
+        <blockquote>"Tangled is a delightful return to form for Disney animation." <cite>- Rotten Tomatoes</cite></blockquote>
+        <blockquote>"The best Disney animated feature in years." <cite>- Rolling Stone</cite></blockquote>
+        <blockquote>"A visually stunning, thoroughly entertaining addition to the Disney canon." <cite>- Variety</cite></blockquote>
+        <!--
+              <blockquote> semantic tag - indicates quoted content
+              Default styling adds indentation
+            -->
+        
+        <div class="cta-button"><!-- Container div for button - allows centering -->
+            <a href="https://movies.disney.com/tangled" target="_blank" class="button">Visit Official Site</a>
+            <!--
+              Anchor tag styled as button:
+              - href with full URL (absolute link)
+              - target="_blank" opens in new tab (user doesn't leave our site)
+              - class="button" connects to CSS styling
+            -->
+        </div>
+    </section>
+
+    <footer>
+        <!--
+          <footer> semantic tag - contains closing content
+          Default position at bottom of page
+        -->
+        <p>&copy; 2023 Tangled Fan Page. Not affiliated with Disney.</p>
+        <!--
+          Copyright notice:
+          - &copy; is HTML entity for © symbol
+          - Disclaimer for legal protection
+        -->
+    </footer>
+</body>
+</html>

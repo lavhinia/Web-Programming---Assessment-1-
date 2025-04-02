@@ -1,0 +1,61 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif; /* Sets font */
+  display: flex; /* Enables flexbox */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Removes default margin */
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+/* Calculator Container */
+.calculator {
+  background: white; /* White background for the box */
+  padding: 20px; /* Adds padding inside the box */
+  border-radius: 8px; /* Rounds the corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow */
+  text-align: center; /* Centers text */
+  width: 300px; /* Sets a fixed width */
+}
+
+/* Input Fields */
+input {
+  width: 90%; /* Makes inputs take most of the container width */
+  padding: 10px; /* Adds spacing inside the input */
+  margin: 10px 0; /* Adds spacing around the input */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounds the corners */
+  font-size: 16px; /* Sets font size */
+}
+
+/* Input Focus Effect */
+input:focus {
+  border-color: #8c15e9; /* Changes border color when selected */
+  outline: none; /* Removes default focus outline */
+}
+
+/* Button Styling */
+button {
+  background-color: #8c15e9; /* Purple background */
+  color: white; /* White text */
+  border: none; /* Removes default border */
+  padding: 10px 15px; /* Adds padding */
+  font-size: 18px; /* Increases font size */
+  cursor: pointer; /* Changes cursor to pointer */
+  width: 100%; /* Makes button full width */
+  border-radius: 5px; /* Rounds the corners */
+  margin-top: 10px; /* Adds spacing */
+}
+
+/* Button Hover Effect */
+button:hover {
+  background-color: #6a0dad; /* Darker purple on hover */
+}
+
+/* Result Display */
+p {
+  font-size: 20px; /* Increases font size */
+  font-weight: bold; /* Makes text bold */
+  margin-top: 15px; /* Adds spacing above */
+}

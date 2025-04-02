@@ -1,0 +1,26 @@
+/* General Styles */
+body {
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  display: flex; /* Uses flexbox for centering */
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  height: 100vh; /* Makes the body take up the full viewport height */
+  background-color: #f5f5f5; /* Light gray background color */
+}
+
+/* Video Container */
+.video-container {
+  display: flex; /* Uses flexbox */
+  justify-content: center; /* Centers the video horizontally */
+  align-items: center; /* Centers the video vertically */
+  width: 100%; /* Ensures it spans the full width of the page */
+}
+
+/* Video Styling */
+video {
+  width: 60%; /* Sets the video width to 60% of the page */
+  max-width: 800px; /* Limits maximum width to 800px */
+  border-radius: 8px; /* Adds rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for better visibility */
+}

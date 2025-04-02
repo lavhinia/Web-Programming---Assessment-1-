@@ -1,0 +1,74 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+/* Header */
+header {
+  background-color: #17072b;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: Tahoma, sans-serif;
+  font-weight: 700;
+}
+
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+/* Main content */
+main {
+  padding: 20px;
+}
+
+/* Welcome section */
+.welcome {
+  background-color: #172d67;
+  color: white;
+  padding: 20px;
+}
+
+/* Line Up section */
+.line-up {
+  margin-top: 20px;
+}
+
+.line-up .images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.line-up img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Footer */
+footer {
+  background-color: #8c15e9;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+}
